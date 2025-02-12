@@ -11,10 +11,10 @@
     "dev": "tsup --watch",
     "build": "tsup"
   },
+  "peerDependencies": {
+    "unocss": "*"
+  },
   "devDependencies": {
     "tsup": "^8.3.6"
-  },
-  "dependencies": {
-    "unocss": "^65.4.3"
   }
 }

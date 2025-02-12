@@ -12,6 +12,7 @@
   "devDependencies": {
     "@hellolin/eslint-config": "^0.3.0",
     "@types/node": "^22.13.1",
-    "eslint": "^9.20.0"
+    "eslint": "^9.20.0",
+    "unocss": "^65.4.3"
   }
 }

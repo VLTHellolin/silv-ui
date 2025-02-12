@@ -1,0 +1,20 @@
+{
+  "name": "@silv-ui/preset",
+  "version": "0.0.0",
+  "description": "Preset for Silv UI.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.6"
+  },
+  "dependencies": {
+    "unocss": "^65.4.3"
+  }
+}

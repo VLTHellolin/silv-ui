@@ -15,11 +15,13 @@ export const button: Shortcuts = [
     relative box-border cursor-pointer
     text-sm font-medium whitespace-nowrap overflow-hidden
     transition-colors rounded-md
+    disabled:(cursor-not-allowed pointer-events-none opacity-70 shadow-none)
     button-primary button-size-md
   `],
   ['button-primary', 'bg-primary text-primary-foreground hover:bg-primary/85'],
   ['button-secondary', 'bg-secondary text-secondary-foreground hover:bg-secondary/85'],
-  ['button-outline', 'bg-transparent text-accent-foreground hover:bg-accent'],
+  ['button-outline', 'bg-transparent text-accent-foreground border-(1 solid primary) hover:bg-accent'],
+  ['button-light', 'bg-transparent text-secondary-foreground hover:bg-secondary/85'],
   ['button-ghost', 'bg-transparent text-accent-foreground hover:(bg-primary text-primary-foreground)'],
   [/^button-size-(.+)$/, ([, size]) => {
     if (size in sizes)

@@ -14,7 +14,10 @@
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@hellolin/eslint-config": "^0.3.0",
+    "@types/mdx": "^2.0.13",
     "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
     "eslint": "^9.20.0",
     "husky": "^9.1.7",
     "unocss": "^65.4.3"

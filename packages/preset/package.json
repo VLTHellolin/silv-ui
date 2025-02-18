@@ -14,6 +14,9 @@
   "peerDependencies": {
     "unocss": "*"
   },
+  "dependencies": {
+    "unocss-preset-radix": "^2.8.2"
+  },
   "devDependencies": {
     "tsup": "^8.3.6"
   }

@@ -1,7 +1,7 @@
 // @unocss-include
-import type { Shortcuts } from '../types';
+import type { Shortcut } from '../types';
 
-export const button: Shortcuts = [
+export const button: Shortcut[] = [
   ['button', `
     inline-flex items-center justify-center gap-2 children:shrink-0
     relative box-border cursor-pointer

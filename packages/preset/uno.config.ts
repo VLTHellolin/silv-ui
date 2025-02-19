@@ -1,4 +1,4 @@
-import { defineConfig, presetUno, transformerVariantGroup } from 'unocss';
+import { defineConfig, presetIcons, presetUno, transformerVariantGroup } from 'unocss';
 import { presetRadix, radixColors } from 'unocss-preset-radix';
 
 export default defineConfig({
@@ -13,6 +13,11 @@ export default defineConfig({
       variantPrefix: 'silv-',
       darkSelector: '.dark, .dark-theme',
       lightSelector: ':root, .light, .light-theme',
+    }),
+    presetIcons({
+      collections: {
+        lucide: () => import('@iconify-json/lucide/icons.json').then(e => e.default),
+      },
     }),
   ],
   transformers: [

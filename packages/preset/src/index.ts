@@ -2,6 +2,7 @@ import type { Theme } from 'unocss/preset-mini';
 import type { PresetSilvOptions } from './types';
 import { definePreset, transformerVariantGroup } from 'unocss';
 import { presetRadix, radixColors } from 'unocss-preset-radix';
+import { preflight } from './preflight';
 import { shortcuts } from './shortcuts';
 
 export const presetSilv = definePreset<PresetSilvOptions, Theme>(options => {
@@ -23,6 +24,9 @@ export const presetSilv = definePreset<PresetSilvOptions, Theme>(options => {
     ],
     transformers: [
       transformerVariantGroup(),
+    ],
+    preflights: [
+      { getCSS: () => preflight },
     ],
   };
 });

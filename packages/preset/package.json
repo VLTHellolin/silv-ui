@@ -12,13 +12,14 @@
     "build": "tsup"
   },
   "peerDependencies": {
+    "@iconify-json/lucide": "*",
     "unocss": "*"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.26",
     "unocss-preset-radix": "^2.8.2"
   },
   "devDependencies": {
+    "@iconify-json/lucide": "^1.2.26",
     "tsup": "^8.3.6"
   }
 }

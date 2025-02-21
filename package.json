@@ -15,7 +15,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "@hellolin/eslint-config": "^0.3.1",
+    "@hellolin/eslint-config": "^0.3.2",
     "@types/mdx": "^2.0.13",
     "@types/node": "^22.13.4",
     "@types/react": "^19.0.10",

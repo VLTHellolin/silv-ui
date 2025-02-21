@@ -17,7 +17,6 @@
     "unocss": "*"
   },
   "dependencies": {
-    "c12": "^2.0.2",
     "clsx": "^2.1.1",
     "radix-ui": "^1.1.3"
   },

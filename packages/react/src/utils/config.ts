@@ -1,4 +1,8 @@
-import type { Config } from './../types';
-import { loadConfig } from 'c12';
+import type { Config } from '../types';
+import { createContext, use } from 'react';
 
-export const { config } = await loadConfig<Config>({ name: 'silv' });
+export const ConfigContext = createContext<Config>({});
+
+export function useConfig() {
+  return use(ConfigContext);
+}

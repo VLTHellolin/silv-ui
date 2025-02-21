@@ -1,5 +1,5 @@
 import { Avatar as RadixAvatar } from 'radix-ui';
-import { getStyleAttributes } from '../utils/style';
+import { useStyleAttributes } from '../utils/style';
 
 export type AvatarRootProps = RadixAvatar.AvatarProps;
 
@@ -8,7 +8,7 @@ export function AvatarRoot({
   className,
   ...props
 }: AvatarRootProps) {
-  const attributes = getStyleAttributes(
+  const attributes = useStyleAttributes(
     { avatar: true },
     className,
   );
@@ -26,7 +26,7 @@ export function AvatarImage({
   className,
   ...props
 }: AvatarImageProps) {
-  const attributes = getStyleAttributes(
+  const attributes = useStyleAttributes(
     { 'avatar-image': true },
     className,
   );
@@ -42,7 +42,7 @@ export function AvatarFallback({
   className,
   ...props
 }: AvatarFallbackProps) {
-  const attributes = getStyleAttributes(
+  const attributes = useStyleAttributes(
     { 'avatar-fallback': true },
     className,
   );

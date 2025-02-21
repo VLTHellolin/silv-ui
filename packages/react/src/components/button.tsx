@@ -1,6 +1,6 @@
 import type React from 'react';
 import type { SilvColor, SilvSize, SilvVariant } from '../types';
-import { getStyleAttributes } from '../utils/style';
+import { useStyleAttributes } from '../utils/style';
 
 export interface ButtonProps extends React.ComponentPropsWithRef<'button'> {
   size?: SilvSize;
@@ -16,7 +16,7 @@ export function Button({
   color,
   ...props
 }: ButtonProps) {
-  const attributes = getStyleAttributes(
+  const attributes = useStyleAttributes(
     {
       button: ['~', size, variant],
       hue: [color],

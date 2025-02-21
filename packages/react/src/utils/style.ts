@@ -1,7 +1,9 @@
 import clsx from 'clsx';
-import { config } from './config';
+import { useConfig } from './config';
 
-export function getStyleAttributes(src: Record<string, string[] | true>, className?: string) {
+export function useStyleAttributes(src: Record<string, (string | number | undefined)[] | true>, className?: string) {
+  const config = useConfig();
+
   if (!config.attributify) {
     const result = [];
     for (const key in src) {

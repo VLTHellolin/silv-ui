@@ -53,3 +53,9 @@ export function AvatarFallback({
     </RadixAvatar.Fallback>
   );
 }
+
+export const Avatar = {
+  Root: AvatarRoot,
+  Image: AvatarImage,
+  Fallback: AvatarFallback,
+};

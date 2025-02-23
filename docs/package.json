@@ -2,15 +2,23 @@
   "name": "@silv-ui/docs",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postinstall": "fumadocs-mdx"
+  },
   "dependencies": {
     "fumadocs-core": "^15.0.10",
     "fumadocs-mdx": "^11.5.6",
     "fumadocs-ui": "^15.0.10",
+    "lucide-react": "^0.475.0",
     "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.8",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.8",

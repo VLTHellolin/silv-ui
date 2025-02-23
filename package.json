@@ -8,6 +8,8 @@
     "build": "pnpm --filter=./packages/* build",
     "build:preset": "pnpm --filter preset build",
     "build:react": "pnpm --filter react build",
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:build": "pnpm --filter docs build",
     "prepare": "husky",
     "taze": "taze -Iwr",
     "taze:major": "taze major -Iwr"

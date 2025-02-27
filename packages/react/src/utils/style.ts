@@ -16,7 +16,7 @@ export function useStyleAttributes(src: Record<string, (string | number | undefi
       for (const style of src[key]) {
         if (style === '~')
           result.push(key);
-        if (style)
+        else if (style)
           result.push(`${key}-${style}`);
       }
     }

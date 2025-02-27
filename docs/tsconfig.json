@@ -1,6 +1,11 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
     "lib": [
       "ESNext",
       "DOM",
@@ -10,6 +15,7 @@
     "noEmit": true,
     "incremental": true,
     "resolveJsonModule": true,
+    "jsx": "preserve",
     "plugins": [
       {
         "name": "next"

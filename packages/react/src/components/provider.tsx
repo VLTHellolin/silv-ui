@@ -1,3 +1,5 @@
+'use client';
+
 import type React from 'react';
 import type { Config } from '../types';
 import { Direction } from 'radix-ui';

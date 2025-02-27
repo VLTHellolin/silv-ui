@@ -1,3 +1,5 @@
+'use client';
+
 import { Avatar as RadixAvatar } from 'radix-ui';
 import { useStyleAttributes } from '../utils/style';
 

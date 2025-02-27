@@ -1,3 +1,5 @@
+'use client';
+
 import type React from 'react';
 import type { SilvColor, SilvSize, SilvVariant } from '../types';
 import { useStyleAttributes } from '../utils/style';

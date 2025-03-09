@@ -12,17 +12,17 @@ export function App() {
         <Panel defaultSize={15} minSize={10} maxSize={20}>
           <SandpackFileExplorer className='h-full' />
         </Panel>
-        <PanelResizeHandle />
+        <PanelResizeHandle className='w-1px bg-#252525' />
         <Panel>
           <SandpackCodeEditor className='h-full [&>.sp-tabs]:h-40px' showLineNumbers showInlineErrors showTabs closableTabs />
         </Panel>
-        <PanelResizeHandle />
+        <PanelResizeHandle className='w-1px bg-#252525' />
         <Panel>
           <PanelGroup direction='vertical'>
             <Panel>
               <SandpackPreview className='h-full' showNavigator showOpenInCodeSandbox={false} />
             </Panel>
-            <PanelResizeHandle />
+            <PanelResizeHandle className='w-1px bg-#252525' />
             <Panel>
               <SandpackConsole />
             </Panel>
